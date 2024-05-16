@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FilmDetailsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/filmImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/space16"
+        android:layout_marginTop="@dimen/space16"
+        android:layout_marginEnd="@dimen/space16"
+        android:layout_marginBottom="@dimen/space16"
+        android:minHeight="@dimen/space200"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filmImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/space8"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginEnd="@dimen/space8"
+        android:layout_marginBottom="@dimen/space8"
+        android:text="@string/str_food_name"
+        android:textSize="@dimen/textSize20"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/foodCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/space8"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginEnd="@dimen/space8"
+        android:layout_marginBottom="@dimen/space8"
+        android:text="@string/str_food_calorie"
+        android:textSize="@dimen/textSize18" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/foodCarbohydrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodCalorie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/space8"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginEnd="@dimen/space8"
+        android:layout_marginBottom="@dimen/space8"
+        android:text="@string/str_food_carbohydrate"
+        android:textSize="@dimen/textSize18" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/foodProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodCarbohydrate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/space8"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginEnd="@dimen/space8"
+        android:layout_marginBottom="@dimen/space8"
+        android:text="@string/str_food_protein"
+        android:textSize="@dimen/textSize18" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/foodOil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodProtein"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/space8"
+        android:layout_marginStart="@dimen/space8"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginEnd="@dimen/space8"
+        android:text="@string/str_food_oil"
+        android:textSize="@dimen/textSize18" />
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/filmListFragment">
+    <fragment
+        android:id="@+id/filmListFragment"
+        android:name="com.example.filmlist.view.FoodListFragment"
+        android:label="FilmListFragment" >
+        <action
+            android:id="@+id/action_filmListFragment_to_filmDetailsFragment"
+            app:destination="@id/filmDetailsFragment" />
+        <argument
+            android:name="message"
+            app:argType="integer"
+            android:defaultValue="0" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/filmDetailsFragment"
+        android:name="com.example.filmlist.view.FilmDetailsFragment"
+        android:label="FilmDetailsFragment" >
+        <action
+            android:id="@+id/action_filmDetailsFragment_to_filmListFragment"
+            app:destination="@id/filmListFragment" />
+
+        <argument
+            android:name="foodId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="foodName"
+            app:argType="string"
+            android:defaultValue="Deneme" />
+
+    </fragment>
+</navigation>
+

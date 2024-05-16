@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FilmList</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_food_name">Food Name</string>
+    <string name="str_food_calorie">Food Calorie</string>
+    <string name="str_food_carbohydrate">Food Carbohydrate</string>
+    <string name="str_food_protein">Food Protein</string>
+    <string name="str_food_oil">Food Oil</string>
+    <string name="str_error_message">Error Message</string>
+
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="food"
+            type="com.example.filmlist.model.Food" />
+
+    </data>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space150"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/space0"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space2"
+        android:layout_weight="2"
+        app:srcCompat="@drawable/ic_launcher_background"
+         />
+
+
+    <LinearLayout
+        android:layout_width="@dimen/space0"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/foodNameRecyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space4"
+        android:text="@{food.foodName}"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize20"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/foodCalorieRecyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space4"
+        android:layout_gravity="center"
+        android:text="@{food.foodCalorie}"
+        android:textSize="@dimen/textSize20"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>
